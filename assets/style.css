@@ -6,7 +6,7 @@
     font-family: 'Calibri', serif;
     min-height: 100vh;
     flex-direction: column;
-    background: #7EB3CC;
+    background: white;
     color: #FFDFB8;
 }
 
@@ -33,7 +33,7 @@
 .form__picture{
     width: 200px;
     height: 200px;
-    border-radius: 100px;
+    border-radius: 10px;
     border: solid 5px #FFDFB8;
 }
 

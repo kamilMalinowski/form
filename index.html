@@ -8,6 +8,7 @@
     <title>Kitkowa ankieta</title>
   </head>
 
+  <!--MAIN-->
   <body class="body__form">
     <main class="form">
       <h1 class="form__title-h1">
@@ -23,84 +24,193 @@
           Nie zadawaj więcej pytań!
         </li>
       </ol>
+
+      <!--FORM-WTF-HOMEWORK-->
       <form class="form__form">
-        <fieldset>
-          <legend>Dane osobowe:</legend>
-          <p class="form__description">
-            <label class="form__label" for="firstName">Twoje Imię:</label>
-            <input
-              class="form__item"
-              type="text"
-              placeholder="Imię"
-              id="firstName"
-              name="firstName"
-            />
-          </p>
-          <p class="form__description">
-            <label class="form__label">
-              Twoje Nazwisko:
-              <input
-                class="form__item"
-                type="text"
-                placeholder="Nazwisko"
-                id="lastName"
-                name="lastName"
-              />
-            </label>
-          </p>
-        </fieldset>
-        <fieldset>
-          <legend>Dane osobowe:</legend>
-          <p class="form__description">
-            <label class="form__label" for="click">Twoje Imię:</label>
-            <input
-              class="form__item"
-              type="radio"
-              placeholder="Imię"
-              id="click"
-              name="click"
-            />
-          </p>
-          <p class="form__description">
-            <label class="form__label" for="click">Twoje Imię:</label>
-            <input
-              class="form__item"
-              type="radio"
-              placeholder="Imię"
-              id="click"
-              name="click"
-            />
-          </p>
-        </fieldset>
-        <fieldset>
-          <legend>cZy kochasz kitku?</legend>
-          <p class="form__description">
-            <label class="form__label" d for="click">Tak</label>
-            <input
-              class="form__item"
-              type="radio"
-              placeholder="Imię"
-              id="click"
-              checked
-              name="click"
-              value="TAk"
-            />
-          </p>
-          <p class="form__description">nie masz wyboru</p>
-        </fieldset>
+        <!--input & label-1-->
         <p class="form__description">
-          <label class="form__label"  for="click">Wyrażam zgodę</label>
+          <label class="form__label" for="firstName">Imię:</label>
           <input
-            class="form__item"
-            type="checkbox"
-            
-            placeholder="Imię"
-            id="click"
-            name="click"
-            value="TAk"
+            class="form__input"
+            type="text"
+            placeholder="Puszek"
+            id="firstName"
+            name="firstName"
           />
         </p>
-
+        <!--input & label-2-->
+        <p class="form__description">
+          <label class="form__label">
+            Nazwisko:
+            <input
+              class="form__input"
+              type="text"
+              placeholder="Okruszek"
+              id="lastName"
+              name="lastName"
+            />
+          </label>
+        </p>
+        <!--tel-->
+        <p class="form__description">
+          <label class="form__label">
+            Telefon:
+            <input
+              class="form__input"
+              placeholder="123-456-789"
+              id="phoneNumber"
+              name="phoneNumber"
+              type="tel"
+            />
+          </label>
+        </p>
+        <!--number-->
+        <p class="form__description">
+          <label class="form__label">
+            Ulubiony Numer:
+            <input
+              class="form__input"
+              placeholder="Wpisz swój ulubiony numer np. 12"
+              id="number"
+              name="number"
+              type="number"
+            />
+          </label>
+        </p>
+        <!--e-mail-->
+        <p class="form__description">
+          <label class="form__label">
+            Email
+            <input
+              class="form__input"
+              placeholder="Wpisz swój adres E-mile"
+              id="email"
+              name="email"
+              type="email"
+            />
+          </label>
+        </p>
+        <!--range-->
+        <p class="form__description">
+          <label class="form__label">
+            W skali od jeden do dziesięciu oceń swój poniedziałek:
+            <input
+              class="form__input"
+              id="range"
+              name="range"
+              type="range"
+              min="1"
+              max="10"
+              step="1"
+            />
+          </label>
+        </p>
+        <!--password-->
+        <p class="form__description">
+          <label class="form__label">
+            Wymyśl sobie hasło:
+            <input
+              class="form__input"
+              placeholder="Wpisz hasło"
+              id="password"
+              name="password"
+              type="password"
+            />
+          </label>
+        </p>
+        <!--select-->
+        <p class="form__description">
+          <label class="form__label" for="eat">
+            Wybierz dla kitku karmę:
+            <select id="eat" name="eat">
+              <option value="eat-1">Rybka</option>
+              <option value="eat-2">Mięsko</option>
+              <option value="eat-3">Kurczaczek</option>
+            </select>
+          </label>
+        </p>
+        <!--textarea-->
+        <p class="form__description">
+          <label class="form__label" for="text-cat">
+            Opisz jakie lubisz koteczki:
+            <textarea id="text-cat" name="text-cat"></textarea>
+          </label>
+        </p>
+        <!--radio-->
+        <fieldset class="form__fieldset">
+          <legend class="form__legend">Ulubiony Kolor:</legend>
+          <p class="form__description">
+            <label class="form__label" for="red">Czerwony</label>
+            <input class="form__input" type="radio" id="red" name="red" />
+          </p>
+          <p class="form__description">
+            <label class="form__label" for="blue">Niebieski</label>
+            <input class="form__input" type="radio" id="blue" name="blue" />
+          </p>
+          <p class="form__description">
+            <label class="form__label" for="green">Zielony</label>
+            <input class="form__input" type="radio" id="green" name="green" />
+          </p>
+          <p class="form__description">
+            <label class="form__label" for="white">Biały</label>
+            <input class="form__input" type="radio" id="white" name="white" />
+          </p>
+          <p class="form__description">
+            <label class="form__label" for="black">Czarny</label>
+            <input class="form__input" type="radio" id="black" name="black" />
+          </p>
+          <p class="form__description">
+            <label class="form__label" for="yellow">Żółty</label>
+            <input class="form__input" type="radio" id="yellow" name="yellow" />
+          </p>
+          <p class="form__description">
+            <label class="form__label" for="pink">Różowy</label>
+            <input class="form__input" type="radio" id="pink" name="pink" />
+          </p>
+          <p class="form__description">
+            <label class="form__label" for="orange">Pomarańczowy</label>
+            <input class="form__input" type="radio" id="orange" name="orange" />
+          </p>
+        </fieldset>
+        <!--checkbox-->
+        <fieldset class="form__fieldset">
+          <legend class="form__legend">Zaznacz płeć:</legend>
+          <p class="form__description">
+            <label class="form__label" for="male">Mężczyzna</label>
+            <input
+              class="form__input"
+              type="checkbox"
+              id="male"
+              name="male"
+            />
+          </p>
+          <p class="form__description">
+            <label class="form__label" for="female">Kobieta</label>
+            <input
+              class="form__input"
+              type="checkbox"
+              id="female"
+              name="female"
+            />
+          </p>
+        </fieldset>
+        <!--file-->
+        <p class="form__description">
+          <label class="form__label">
+            Wyślij mi zdjęcie koteczków:
+            <input class="form__input" id="cat" name="cat" type="file" />
+          </label>
+        </p>
+        <!--submit-->
+        <p class="form__description">
+          <input
+            class="form__input"
+            id="send"
+            name="send"
+            type="submit"
+            value="Wyślij formularz"
+          />
+        </p>
       </form>
     </main>
   </body>
