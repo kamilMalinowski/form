@@ -5,25 +5,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="assets/normalize.css" rel="stylesheet" type="text/css" />
     <link href="assets/style.css" rel="stylesheet" type="text/css" />
-    <title>Form</title>
+    <title>Kitkowa ankieta</title>
   </head>
 
   <body class="body__form">
     <main class="form">
-        <h1 class="form__title">Forms playground</h1>
-        <form class="form__form">
-            <p class="form__description form__description--special">Pierwszy sposób zapisu formularza<i> (różnica widoczna tylkow w kodzie)</i></p>
-            <p class="form__description">
-                <label for="firstName">Your Name:</label>
-                <input class="form__item" placeholder="First Name"id="firstName" name="firstName">
-            </p>
-            <p class="form__description form__description--special">Drugi sposób zapisu formularza<i> (różnica widoczna tylkow w kodzie)</i></p>
-            <p class="form__description">
-                <label >Your Last Name:
-                    <input class="form__item" type="text" placeholder="Last Name" id="lastName" name="lastName">
-                </label>
-            </p>
-        </form>
+      <h1 class="form__title-h1">
+        Witaj, uczestniczysz w Kitkowej Ankiecie.
+      </h1>
+      <img class="form__picture" src="images/kitku.png" alt="uroczy kotek" />
+      <h2 class="form__title-h2">Regulamin:</h2>
+      <ol class="form__list">
+        <li class="form__list-element">
+          Postępuj zgodnie z instrukcją kitku.
+        </li>
+        <li class="form__list-element">
+          Nie zadawaj więcej pytań!
+        </li>
+      </ol>
+      <form class="form__form">
+        <fieldset>
+          <legend>Dane osobowe:</legend>
+          <p class="form__description">
+            <label class="form__label" for="firstName">Twoje Imię:</label>
+            <input
+              class="form__item"
+              type="text"
+              placeholder="Imię"
+              id="firstName"
+              name="firstName"
+            />
+          </p>
+          <p class="form__description">
+            <label class="form__label">
+              Twoje Nazwisko:
+              <input
+                class="form__item"
+                type="text"
+                placeholder="Nazwisko"
+                id="lastName"
+                name="lastName"
+              />
+            </label>
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Dane osobowe:</legend>
+          <p class="form__description">
+            <label class="form__label" for="click">Twoje Imię:</label>
+            <input
+              class="form__item"
+              type="radio"
+              placeholder="Imię"
+              id="click"
+              name="click"
+            />
+          </p>
+          <p class="form__description">
+            <label class="form__label" for="click">Twoje Imię:</label>
+            <input
+              class="form__item"
+              type="radio"
+              placeholder="Imię"
+              id="click"
+              name="click"
+            />
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>cZy kochasz kitku?</legend>
+          <p class="form__description">
+            <label class="form__label" d for="click">Tak</label>
+            <input
+              class="form__item"
+              type="radio"
+              placeholder="Imię"
+              id="click"
+              checked
+              name="click"
+              value="TAk"
+            />
+          </p>
+          <p class="form__description">nie masz wyboru</p>
+        </fieldset>
+        <p class="form__description">
+          <label class="form__label"  for="click">Wyrażam zgodę</label>
+          <input
+            class="form__item"
+            type="checkbox"
+            
+            placeholder="Imię"
+            id="click"
+            name="click"
+            value="TAk"
+          />
+        </p>
+
+      </form>
     </main>
   </body>
 </html>
