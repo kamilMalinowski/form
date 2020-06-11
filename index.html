@@ -12,20 +12,25 @@
   <body class="body__form">
     <main class="form">
       <div class="form__header">
-        <img class="form__picture" src="images/kitku.png" alt="uroczy kotek" />
+        <a
+          class="form__link"
+          href="https://www.google.com/search?q=cute+cat&sxsrf=ALeKk01cKED_dMYKLR6PRgbE7QPWG6a6mQ:1591880931714&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiCldbL6vnpAhWNmIsKHckgB0oQ_AUoAXoECAoQAw&biw=1536&bih=722#imgrc=VpYRClkWA28c5M"
+          ><img class="form__picture" src="images/kitku.png" alt="uroczy kotek"
+        /></a>
         <h1 class="form__title-h1">ZAREJESTRUJ KITKU W KOCIEJ BAZIE DANYCH</h1>
       </div>
-      <h2 class="form__title-h2">Dane osobowe:</h2>
+
       <!--FORM-WTF-HOMEWORK-->
       <form
         action="https://dev.cotenfrontend.pl"
         method="POST"
         class="form__form"
       >
-        <!--input & label-1-->
+        <h2 class="form__title-h2">Dane Kitku:</h2>
+        <!--input & label-->
         <p class="form__description">
           <label class="form__label" for="firstName"
-            >Wymyśl imię dla kitku:</label
+            >Wymyśl imię dla Kitku:</label
           >
           <input
             required
@@ -36,118 +41,116 @@
             name="firstName"
           />
         </p>
-        <!--input & label-2-->
         <p class="form__description">
-          <label class="form__label">
-            Oraz nazwisko:
-            <input
-              required
-              class="form__input"
-              type="text"
-              placeholder="np. Okruszek"
-              id="lastName"
-              name="lastName"
-            />
-          </label>
+          <label class="form__label" for="lastName"> Wymyśl mu nazwisko:</label>
+          <input
+            required
+            class="form__input"
+            type="text"
+            placeholder="np. Okruszek"
+            id="lastName"
+            name="lastName"
+          />
         </p>
         <!--tel-->
         <p class="form__description">
-          <label class="form__label">
-            Kitku potrzebuje telefon:
-            <input
-              required
-              class="form__input"
-              placeholder="A jego numer to?"
-              id="phoneNumber"
-              name="phoneNumber"
-              type="tel"
-            />
+          <label class="form__label" for="phoneNumber">
+            Kitkowy numer telefonu:
           </label>
+          <input
+            required
+            class="form__input"
+            placeholder="A jego numer to?"
+            id="phoneNumber"
+            name="phoneNumber"
+            type="tel"
+          />
         </p>
         <!--number-->
         <p class="form__description">
-          <label class="form__label">
-            Wiadomo, ze kitku ma swój ulubiony numer:
-            <input
-              required
-              class="form__input"
-              placeholder="Podaj go!"
-              id="number"
-              name="number"
-              type="number"
-            />
+          <label class="form__label" for="number">
+            Wiadomo, że Kitku ma swój ulubiony numer:
           </label>
+          <input
+            required
+            class="form__input"
+            placeholder="Podaj go!"
+            id="number"
+            name="number"
+            type="number"
+          />
         </p>
         <!--e-mail-->
         <p class="form__description">
-          <label class="form__label">
+          <label class="form__label" for="email">
             Nie może zabraknąć e-maila:
-            <input
-              required
-              class="form__input"
-              placeholder="np. kitku_92@kociabaza.pl"
-              id="email"
-              name="email"
-              type="email"
-            />
           </label>
+          <input
+            required
+            class="form__input"
+            placeholder="np. kitku_92@kociabaza.pl"
+            id="email"
+            name="email"
+            type="email"
+          />
         </p>
         <!--password-->
         <p class="form__description">
-          <label class="form__label">
-            Wymyśl kitkowi hasło do e-maila:
-            <input
-              required
-              class="form__input"
-              placeholder="np. Kitkuśmieszku15*a"
-              id="password"
-              name="password"
-              type="password"
-            />
-          </label>
+          <label class="form__label" for="password">
+            Wymyśl Kitkowi hasło do e-maila:</label
+          >
+          <input
+            required
+            class="form__input"
+            placeholder="np. Kitkuśmieszku15*a"
+            id="password"
+            name="password"
+            type="password"
+          />
         </p>
         <!--range-->
         <p class="form__description">
-          <label class="form__label">
-            Kitku lubi zabawę. Ustaw miarkę w połowie:
-            <input
-              class="form__input"
-              id="range"
-              name="range"
-              type="range"
-              min="1"
-              max="11"
-              step="1"
-              value="1"
-            />
+          <label class="form__label" for="range">
+            Kitku lubi się bawić ale jest leniuszkiem. Poruszaj Kitku:
           </label>
+          <input
+            class="form__range"
+            id="range"
+            name="range"
+            type="range"
+            max="12"
+            min="0"
+            value="0"
+            step="1"
+          />
         </p>
         <!--select-->
         <p class="form__description">
           <label class="form__label" for="eat">
-            Czy twój kitku lubi jeść:
-            <select required id="eat" name="eat">
-              <option value="eat-1">Rybkę</option>
-              <option value="eat-2">Mięsko</option>
-              <option value="eat-3">Tak</option>
-            </select>
+            Czy twój Kitku lubi jeść:
           </label>
+          <select class="form__select" id="eat" name="eat">
+            <option value="eat-1">Rybkę</option>
+            <option value="eat-2">Mięsko</option>
+            <option value="eat-3">Tak</option>
+          </select>
         </p>
         <!--textarea-->
         <p class="form__description">
           <label class="form__label" for="text-cat">
-            Opisz jaki jest twój kitku:
-            <textarea
-              required
-              id="text-cat"
-              placeholder="np. Mój kitku jest wspaniały"
-              name="text-cat"
-            ></textarea>
+            Opisz jaki jest twój Kitku:
           </label>
+          <textarea
+            class="form__textarea"
+            required
+            id="text-cat"
+            placeholder="np. Mój kitku jest wspaniały"
+            name="text-cat"
+          ></textarea>
         </p>
         <!--radio-->
         <fieldset class="form__fieldset">
-          <legend class="form__legend">Ulubiony kolor kitku to:</legend>
+          <legend class="form__legend">Ulubiony kolor Kitku to:</legend>
           <p class="form__description">
             <label class="form__label" for="red">Czerwony</label>
             <input class="form__input" type="radio" id="red" name="red" />
@@ -185,8 +188,13 @@
         <fieldset class="form__fieldset">
           <legend class="form__legend">Kitku to:</legend>
           <p class="form__description">
-            <label class="form__label" for="male">Samiec Alfa</label>
-            <input class="form__input" type="checkbox" id="male" name="male" />
+            <label class="form__label" for="malemale">Samiec Alfa</label>
+            <input
+              class="form__input"
+              type="checkbox"
+              id="malemale"
+              name="malemale"
+            />
           </p>
           <p class="form__description">
             <label class="form__label" for="female">Samiczka</label>
@@ -200,19 +208,26 @@
         </fieldset>
         <!--file-->
         <p class="form__description">
-          <label class="form__label">
-            Na koniec wyślij mi zdjęcie kitku:
-            <input class="form__input" id="cat" name="cat" type="file" />
+          <label class="form__label" for="sendcat">
+            Na koniec wyślij mi zdjęcie Kitku:
           </label>
+          <input
+            class="form__input"
+            id="sendcat"
+            name="sendcat"
+            type="file"
+            accept="image/png, image/jpeg"
+            value="Szybciutkoooo"
+          />/>
         </p>
         <!--submit-->
         <p class="form__description">
           <input
-            class="form__input"
+            class="form__input form__input--send"
             id="send"
             name="send"
             type="submit"
-            value="Wyślij dane kitku do kitkowej bazy danych"
+            value="Wyślij dane Kitku do kitkowej bazy danych"
           />
         </p>
       </form>
