@@ -11,29 +11,22 @@
   <!--MAIN-->
   <body class="body__form">
     <main class="form">
-      <h1 class="form__title-h1">
-        Witaj, uczestniczysz w Kitkowej Ankiecie.
-      </h1>
-      <img class="form__picture" src="images/kitku.png" alt="uroczy kotek" />
-      <h2 class="form__title-h2">Regulamin:</h2>
-      <ol class="form__list">
-        <li class="form__list-element">
-          Postępuj zgodnie z instrukcją kitku.
-        </li>
-        <li class="form__list-element">
-          Nie zadawaj więcej pytań!
-        </li>
-      </ol>
-
+      <div class="form__header">
+        <img class="form__picture" src="images/kitku.png" alt="uroczy kotek" />
+        <h1 class="form__title-h1">ZAREJESTRUJ KITKU W KOCIEJ BAZIE DANYCH</h1>
+      </div>
+      <h2 class="form__title-h2">Dane osobowe:</h2>
       <!--FORM-WTF-HOMEWORK-->
       <form class="form__form">
         <!--input & label-1-->
         <p class="form__description">
-          <label class="form__label" for="firstName">Imię:</label>
+          <label class="form__label" for="firstName"
+            >Wymyśl imię dla kitku:</label
+          >
           <input
             class="form__input"
             type="text"
-            placeholder="Puszek"
+            placeholder="np. Puszek"
             id="firstName"
             name="firstName"
           />
@@ -41,11 +34,11 @@
         <!--input & label-2-->
         <p class="form__description">
           <label class="form__label">
-            Nazwisko:
+            Oraz nazwisko:
             <input
               class="form__input"
               type="text"
-              placeholder="Okruszek"
+              placeholder="np. Okruszek"
               id="lastName"
               name="lastName"
             />
@@ -54,10 +47,10 @@
         <!--tel-->
         <p class="form__description">
           <label class="form__label">
-            Telefon:
+            Kitku potrzebuje telefon:
             <input
               class="form__input"
-              placeholder="123-456-789"
+              placeholder="A jego numer to?"
               id="phoneNumber"
               name="phoneNumber"
               type="tel"
@@ -67,10 +60,10 @@
         <!--number-->
         <p class="form__description">
           <label class="form__label">
-            Ulubiony Numer:
+            Wiadomo, ze kitku ma swój ulubiony numer:
             <input
               class="form__input"
-              placeholder="Wpisz swój ulubiony numer np. 12"
+              placeholder="Podaj go!"
               id="number"
               name="number"
               type="number"
@@ -80,20 +73,33 @@
         <!--e-mail-->
         <p class="form__description">
           <label class="form__label">
-            Email
+            Nie może zabraknać e-maila:
             <input
               class="form__input"
-              placeholder="Wpisz swój adres E-mile"
+              placeholder="np. kitku_92@kociabaza.pl"
               id="email"
               name="email"
               type="email"
             />
           </label>
         </p>
+        <!--password-->
+        <p class="form__description">
+          <label class="form__label">
+            Wymyśl kitkowi hasło do e-maila:
+            <input
+              class="form__input"
+              placeholder="np. Kitkuśmieszku15*a"
+              id="password"
+              name="password"
+              type="password"
+            />
+          </label>
+        </p>
         <!--range-->
         <p class="form__description">
           <label class="form__label">
-            W skali od jeden do dziesięciu oceń swój poniedziałek:
+            Kitku lubi zabawę. Ustaw miarkę w połowie:
             <input
               class="form__input"
               id="range"
@@ -105,40 +111,31 @@
             />
           </label>
         </p>
-        <!--password-->
-        <p class="form__description">
-          <label class="form__label">
-            Wymyśl sobie hasło:
-            <input
-              class="form__input"
-              placeholder="Wpisz hasło"
-              id="password"
-              name="password"
-              type="password"
-            />
-          </label>
-        </p>
         <!--select-->
         <p class="form__description">
           <label class="form__label" for="eat">
-            Wybierz dla kitku karmę:
+            Czy twój kitku lubi jeść:
             <select id="eat" name="eat">
-              <option value="eat-1">Rybka</option>
+              <option value="eat-1">Rybkę</option>
               <option value="eat-2">Mięsko</option>
-              <option value="eat-3">Kurczaczek</option>
+              <option value="eat-3">Tak</option>
             </select>
           </label>
         </p>
         <!--textarea-->
         <p class="form__description">
           <label class="form__label" for="text-cat">
-            Opisz jakie lubisz koteczki:
-            <textarea id="text-cat" name="text-cat"></textarea>
+            Opisz jaki jest twój kitku:
+            <textarea
+              id="text-cat"
+              placeholder="np. Mój kitku jest wspaniały"
+              name="text-cat"
+            ></textarea>
           </label>
         </p>
         <!--radio-->
         <fieldset class="form__fieldset">
-          <legend class="form__legend">Ulubiony Kolor:</legend>
+          <legend class="form__legend">Ulubiony kolor kitku to:</legend>
           <p class="form__description">
             <label class="form__label" for="red">Czerwony</label>
             <input class="form__input" type="radio" id="red" name="red" />
@@ -174,18 +171,13 @@
         </fieldset>
         <!--checkbox-->
         <fieldset class="form__fieldset">
-          <legend class="form__legend">Zaznacz płeć:</legend>
+          <legend class="form__legend">Kitku to:</legend>
           <p class="form__description">
-            <label class="form__label" for="male">Mężczyzna</label>
-            <input
-              class="form__input"
-              type="checkbox"
-              id="male"
-              name="male"
-            />
+            <label class="form__label" for="male">Samiec Alfa</label>
+            <input class="form__input" type="checkbox" id="male" name="male" />
           </p>
           <p class="form__description">
-            <label class="form__label" for="female">Kobieta</label>
+            <label class="form__label" for="female">Samiczka</label>
             <input
               class="form__input"
               type="checkbox"
@@ -197,7 +189,7 @@
         <!--file-->
         <p class="form__description">
           <label class="form__label">
-            Wyślij mi zdjęcie koteczków:
+            Na koniec wyślij mi zdjęcie kitku:
             <input class="form__input" id="cat" name="cat" type="file" />
           </label>
         </p>
@@ -208,7 +200,7 @@
             id="send"
             name="send"
             type="submit"
-            value="Wyślij formularz"
+            value="Wyślij dane kitku do kitkowej bazy danych"
           />
         </p>
       </form>

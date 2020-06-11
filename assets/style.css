@@ -2,51 +2,45 @@
 .form{
     display: flex;
     justify-content: center;
-    align-items: center;
-    font-family: 'Calibri', serif;
-    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
     flex-direction: column;
-    background: white;
+    background: #7EB3CC;
     color: #FFDFB8;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 24px;
+    padding: 0 30px;
 }
 
 /*headers*/
-.form__title-h1{
-    font-size: 40px;
+.form__header{
+    display: flex;
 }
 .form__title-h2{
-    font-size: 34px;
+
     margin-bottom: 10px;
 }
 
-/*list*/
-.form__list-element{
-    font-size: 28px;
-    padding: 20px;
-    margin-bottom: 20px;
-    background: #366780;
-    color: white;
-    border-radius: 100px;
-    text-align: center;
-}
-/*pictures*/
+/*picture*/
 .form__picture{
     width: 200px;
     height: 200px;
-    border-radius: 10px;
-    border: solid 5px #FFDFB8;
+
 }
 
-
-
-.form__form{
-
-    max-width: 500px;
-}
+/*others*/
 .form__description{
 color: #806442;
-font-size: 24px;
+
 }
+
+.form__input{
+    text-align: right;
+}
+.form__label{
+    align-items: flex-start;
+}
+    
 
 
 /* colorki:
