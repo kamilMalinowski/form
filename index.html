@@ -17,13 +17,18 @@
       </div>
       <h2 class="form__title-h2">Dane osobowe:</h2>
       <!--FORM-WTF-HOMEWORK-->
-      <form class="form__form">
+      <form
+        action="https://dev.cotenfrontend.pl"
+        method="POST"
+        class="form__form"
+      >
         <!--input & label-1-->
         <p class="form__description">
           <label class="form__label" for="firstName"
             >Wymyśl imię dla kitku:</label
           >
           <input
+            required
             class="form__input"
             type="text"
             placeholder="np. Puszek"
@@ -36,6 +41,7 @@
           <label class="form__label">
             Oraz nazwisko:
             <input
+              required
               class="form__input"
               type="text"
               placeholder="np. Okruszek"
@@ -49,6 +55,7 @@
           <label class="form__label">
             Kitku potrzebuje telefon:
             <input
+              required
               class="form__input"
               placeholder="A jego numer to?"
               id="phoneNumber"
@@ -62,6 +69,7 @@
           <label class="form__label">
             Wiadomo, ze kitku ma swój ulubiony numer:
             <input
+              required
               class="form__input"
               placeholder="Podaj go!"
               id="number"
@@ -73,8 +81,9 @@
         <!--e-mail-->
         <p class="form__description">
           <label class="form__label">
-            Nie może zabraknać e-maila:
+            Nie może zabraknąć e-maila:
             <input
+              required
               class="form__input"
               placeholder="np. kitku_92@kociabaza.pl"
               id="email"
@@ -88,6 +97,7 @@
           <label class="form__label">
             Wymyśl kitkowi hasło do e-maila:
             <input
+              required
               class="form__input"
               placeholder="np. Kitkuśmieszku15*a"
               id="password"
@@ -106,8 +116,9 @@
               name="range"
               type="range"
               min="1"
-              max="10"
+              max="11"
               step="1"
+              value="1"
             />
           </label>
         </p>
@@ -115,7 +126,7 @@
         <p class="form__description">
           <label class="form__label" for="eat">
             Czy twój kitku lubi jeść:
-            <select id="eat" name="eat">
+            <select required id="eat" name="eat">
               <option value="eat-1">Rybkę</option>
               <option value="eat-2">Mięsko</option>
               <option value="eat-3">Tak</option>
@@ -127,6 +138,7 @@
           <label class="form__label" for="text-cat">
             Opisz jaki jest twój kitku:
             <textarea
+              required
               id="text-cat"
               placeholder="np. Mój kitku jest wspaniały"
               name="text-cat"
