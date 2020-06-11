@@ -49,7 +49,7 @@
   display: inline;
 }
 .form__fieldset .form__input {
-    width: 10%;
+  width: 10%;
 }
 .form__label {
   display: block;
@@ -68,13 +68,13 @@
   border-radius: 6px;
   width: 300px;
 }
-.form__input--send{
-    width: 100%;
-    cursor: pointer;
+.form__input--send {
+  width: 100%;
+  cursor: pointer;
 }
-    .form__input--file{
-        width: 400px;
-        cursor: pointer;
+.form__input--file {
+  width: 400px;
+  cursor: pointer;
 }
 .form__textarea {
   display: block;
@@ -105,8 +105,7 @@
   -webkit-appearance: none;
   height: 60px;
   cursor: pointer;
-  background-image: url(/images/kitku.png);
-  background-size: contain;
+  background-color: #ffdfb8;
   border-radius: 100%;
   padding: 4px;
 }
