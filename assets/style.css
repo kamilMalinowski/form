@@ -72,6 +72,10 @@
     width: 100%;
     cursor: pointer;
 }
+    .form__input--file{
+        width: 400px;
+        cursor: pointer;
+}
 .form__textarea {
   display: block;
   height: 200px;
