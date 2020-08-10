@@ -3,30 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kocia Baza Danych</title>
     <link href="assets/normalize.css" rel="stylesheet" type="text/css" />
     <link href="assets/style.css" rel="stylesheet" type="text/css" />
-    <title>Kitkowa ankieta</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      name="description"
+      content="Kocia baza danych stworzona w ramach szkolenia ...WTF: Co ten Frontend..."
+    />
+    <meta property="og:image" content="#" />
+    <meta property="og:image:secure_url" content="#" />
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="200" />
+    <link rel="icon" type="image/png" sizes="96x96" href="#" />
   </head>
 
   <!--MAIN-->
-  <body class="body__form">
-    <main class="form">
-      <div class="form__header">
-        <a
-          class="form__link"
-          href="https://www.google.com/search?q=cute+cat&sxsrf=ALeKk01cKED_dMYKLR6PRgbE7QPWG6a6mQ:1591880931714&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiCldbL6vnpAhWNmIsKHckgB0oQ_AUoAXoECAoQAw&biw=1536&bih=722#imgrc=VpYRClkWA28c5M"
-          ><img class="form__picture" src="images/kitku.png" alt="uroczy kotek"
-        /></a>
-        <h1 class="form__title-h1">ZAREJESTRUJ KITKU W KOCIEJ BAZIE DANYCH</h1>
-      </div>
+  <body class="body">
+    <main class="main">
+      <!--header-->
+      <header class="header">
+        <h1 class="header__tilte">
+          Kocia Baza Danych
+        </h1>
+        <p class="header__description">
+          Tu możesz zarejestrować swojego ukochanego pupila
+        </p>
+      </header>
 
       <!--FORM-WTF-HOMEWORK-->
       <form
-        action="https://dev.cotenfrontend.pl"
+        action="mailto:kamil.malinowski.mlu@gmail.com"
         method="POST"
-        class="form__form"
+        enctype="multipart/form-data"
+        name="form"
+        class="form"
       >
-        <h2 class="form__title-h2">Dane Kitku:</h2>
         <!--input & label-->
         <p class="form__description">
           <label class="form__label" for="firstName"
