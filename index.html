@@ -42,6 +42,20 @@
         name="form"
         class="form"
       >
+        <div class="picture picture--js">Dodaj zdjęcie</div>
+        <!--file-->
+        <p class="form__description">
+          <label class="form__label" for="sendcat">
+            Na koniec wyślij mi zdjęcie Kitku:
+          </label>
+          <input
+            class="form__input-file"
+            id="sendcat"
+            name="sendcat"
+            type="file"
+            accept="image/png, image/jpeg"
+          />
+        </p>
         <!--input & label-->
         <p class="form__description">
           <label class="form__label" for="firstName"
@@ -202,39 +216,21 @@
         </fieldset>
         <!--checkbox-->
         <fieldset class="form__fieldset">
-          <legend class="form__legend">Kitku to:</legend>
+          <legend class="form__legend">Rejestracja</legend>
           <p class="form__description">
-            <label class="form__label" for="malemale">Samiec Alfa</label>
+            <label class="form__label" for="accept"
+              >Wyrażam zgodę na rejestrację mojego pupila do Kociej Bazy
+              Danych</label
+            >
             <input
               class="form__input"
               type="checkbox"
-              id="malemale"
-              name="malemale"
-            />
-          </p>
-          <p class="form__description">
-            <label class="form__label" for="female">Samiczka</label>
-            <input
-              class="form__input"
-              type="checkbox"
-              id="female"
-              name="female"
+              id="accept"
+              name="accept"
             />
           </p>
         </fieldset>
-        <!--file-->
-        <p class="form__description">
-          <label class="form__label" for="sendcat">
-            Na koniec wyślij mi zdjęcie Kitku:
-          </label>
-          <input
-            class="form__input-file"
-            id="sendcat"
-            name="sendcat"
-            type="file"
-            accept="image/png, image/jpeg"
-          />
-        </p>
+
         <!--submit-->
         <p class="form__description">
           <input

@@ -1,28 +1,26 @@
+@charset "UTF-8";
 /*RESET-m.korsan idea*/
 html {
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
+
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
-}
+  box-sizing: inherit; }
 
 /*body*/
 .body {
   background: #7eb3cc;
   color: #ffdfb8;
   font-family: "Work Sans", sans-serif;
-  font-size: 16px;
-}
+  font-size: 16px; }
 
 /*main*/
 .main {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-}
+  flex-direction: column; }
 
 /*header*/
 .header {
@@ -31,46 +29,44 @@ html {
   justify-content: center;
   flex-direction: column;
   background: #366780;
-  width: 100%;
-}
+  width: 100%; }
+
 .header__title {
-  font-size: 40px;
-}
+  font-size: 40px; }
+
 .header__description {
-  font-size: 16px;
-}
+  font-size: 16px; }
 
 /*form*/
+.form {
+  color: #366780;
+  width: 100%; }
+
+/*???*/
 .form__select {
   background: #806442;
   color: #ffdfb8;
   border: 1px solid #ffdfb8;
-  border-radius: 6px;
-}
-.form {
-  margin: 0 20px;
-  font-size: 25px;
-  color: #366780;
-}
+  border-radius: 6px; }
+
 .form__title {
   font-size: 35px;
   color: #ffdfb8;
-  text-shadow: 2px 2px 3px rgb(48, 42, 42);
-}
+  text-shadow: 2px 2px 3px #302a2a; }
+
 .form__description {
-  margin: 10px 0;
-}
+  margin: 10px 0; }
+
 .form__fieldset .form__label {
-  display: inline;
-}
+  display: inline; }
+
 .form__fieldset .form__input {
-  width: 10%;
-}
+  width: 10%; }
+
 .form__label {
   display: block;
   margin: 4px 0;
-  font-weight: bold;
-}
+  font-weight: bold; }
 
 .form__textarea,
 .form__input {
@@ -79,110 +75,96 @@ html {
   border: 1px solid #ffdfb8;
   margin: 0 0 10px 0;
   padding: 10px;
-  text-shadow: 2px 2px 3px rgb(48, 42, 42);
+  text-shadow: 2px 2px 3px #302a2a;
   border-radius: 6px;
-  width: 300px;
-}
+  width: 300px; }
+
 .form__input--send {
   width: 100%;
-  cursor: pointer;
-}
+  cursor: pointer; }
+
 .form__input-file {
-  cursor: pointer;
-}
+  cursor: pointer; }
+
 .form__textarea {
   height: 200px;
-  width: 100%;
-}
+  width: 100%; }
 
 /*::*/
 ::placeholder {
   color: #ffdfb8;
-  opacity: 40%;
-}
+  opacity: 40%; }
 
 /*range*/
-
 .form__range {
-  width: 100%;
-}
+  width: 100%; }
+
 .form__range[type="range"] {
   -webkit-appearance: none;
   background-color: #806442;
   height: 20px;
   border: 1px solid #ffdfb8;
   border-radius: 6px;
-  margin: 20px auto;
-}
+  margin: 20px auto; }
+
 .form__range[type="range"]::-webkit-slider-thumb {
   width: 20px;
   -webkit-appearance: none;
   height: 20px;
   cursor: pointer;
   background-color: #ffdfb8;
-  border-radius: 100%;
-}
+  border-radius: 100%; }
+
+/*picture*/
+.picture {
+  width: 100px;
+  height: 100px;
+  background: black;
+  color: white; }
 
 /*media queries*/
 @media screen and (max-width: 500px) {
   .form__picture {
     width: 100px;
-    height: 100px;
-  }
+    height: 100px; }
   .form__title-h1 {
-    font-size: 24px;
-  }
+    font-size: 24px; }
   .form__form {
-    font-size: 18px;
-  }
+    font-size: 18px; }
   .form__title-h2 {
-    font-size: 20px;
-  }
-}
+    font-size: 20px; } }
 
 @media screen and (max-width: 388px) {
   .form__picture {
     width: 80px;
-    height: 80px;
-  }
+    height: 80px; }
   .form__title-h1 {
-    font-size: 20px;
-  }
+    font-size: 20px; }
   .form__form {
-    font-size: 14px;
-  }
+    font-size: 14px; }
   .form__title-h2 {
-    font-size: 18px;
-  }
+    font-size: 18px; }
   .form__input {
-    width: 260px;
-  }
-}
+    width: 260px; } }
+
 @media screen and (max-width: 340px) {
   .form__picture {
     width: 60px;
-    height: 60px;
-  }
+    height: 60px; }
   .form__title-h1 {
-    font-size: 18px;
-  }
+    font-size: 18px; }
   .form__form {
-    font-size: 10px;
-  }
+    font-size: 10px; }
   .form__title-h2 {
-    font-size: 16px;
-  }
+    font-size: 16px; }
   .form__input {
-    width: 180px;
-  }
+    width: 180px; }
   .form__input--send {
-    width: 200px;
-  }
-}
+    width: 200px; } }
 
 /* colorki:
-#FFDFB8 - jasny brąz
-#806442 - ciemy brąz
-#366780 - ciemny niebieski
-#7EB3CC - jasny niebieski
-*/
+  #FFDFB8 - jasny brąz
+  #806442 - ciemy brąz
+  #366780 - ciemny niebieski
+  #7EB3CC - jasny niebieski
+  */
