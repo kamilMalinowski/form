@@ -47,6 +47,7 @@ html {
   grid-template-rows: 1fr 1fr;
   &__description {
     font-size: 16px;
+    margin: 0;
   }
   &__label {
     margin-left: 10px;
@@ -55,68 +56,50 @@ html {
   }
   &__input {
     font-size: 16px;
-    margin-left: 10px;
+    margin-left: 5px;
+    height: 24px;
   }
   &__select {
     font-size: 16px;
-    margin-left: 10px;
+    margin-left: 5px;
+    height: 24px;
   }
   &__textarea {
     font-size: 16px;
-    margin-left: 10px;
+    margin-left: 5px;
+    height: 186px;
+    width: 196px;
   }
 }
-.images {
-  width: 100px;
-  height: 100px;
-}
-.pictureArea {
-  grid-column: 1;
-  grid-row: 1;
-  display: flex;
-  justify-content: left;
-  align-items: left;
-  flex-direction: column;
 
-  padding: 0;
-  background: #7eb3cc;
-  &__imageframe {
+.item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #ffdfb8;
+  &__box {
+    border: 2px dashed #366780;
+    padding: 5px;
+    width: 230px;
+    height: 265px;
     margin: 10px;
-    height: 200px;
-    width: 200px;
-    background: #366780;
+  }
+  &__image {
+    animation: rotate 1s ease-in-out infinite alternate;
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+
   }
 }
 
-.basicData {
-  grid-column: 1;
-  grid-row: 2;
-  display: flex;
-justify-content: space-around;
-align-items: center;
-  background: #ffdfb8;
-}
+@keyframes rotate {
+  from {
+    transform: scale(1);
 
-.contact {
-  grid-column: 2;
-  grid-row: 1;
-  background: #ffdfb8;
-}
+  }
+  to {
+    transform: scale(1.04);
 
-.address {
-  grid-column: 2;
-  grid-row: 2;
-  background: #7eb3cc;
-}
-
-.textarea {
-  grid-column: 3;
-  grid-row: 1;
-  background: #7eb3cc;
-}
-
-.send {
-  grid-column: 3;
-  grid-row: 2;
-  background: #ffdfb8;
+  }
 }
