@@ -1,0 +1,103 @@
+/* ----------BASIC---------- */
+/*RESET-m.korsan idea*/
+html {
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
+
+/*body*/
+.body {
+  background: #366780;
+  color: #000000;
+  font-family: "Work Sans", sans-serif; }
+
+/*main*/
+.main {
+  width: 100%; }
+
+/* ----------HEADER---------- */
+/*header*/
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #366780;
+  color: #ffdfb8;
+  width: 100%; }
+  .header__title {
+    font-size: 40px; }
+  .header__description {
+    font-size: 16px; }
+
+/* ----------FORM---------- */
+/*form*/
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr; }
+  .form__description {
+    font-size: 16px; }
+  .form__label {
+    margin-left: 10px;
+    display: block;
+    padding-bottom: 4px; }
+  .form__input {
+    font-size: 16px;
+    margin-left: 10px; }
+  .form__select {
+    font-size: 16px;
+    margin-left: 10px; }
+  .form__textarea {
+    font-size: 16px;
+    margin-left: 10px; }
+
+.images {
+  width: 100px;
+  height: 100px; }
+
+.pictureArea {
+  grid-column: 1;
+  grid-row: 1;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  flex-direction: column;
+  padding: 0;
+  background: #7eb3cc; }
+  .pictureArea__imageframe {
+    margin: 10px;
+    height: 200px;
+    width: 200px;
+    background: #366780; }
+
+.basicData {
+  grid-column: 1;
+  grid-row: 2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #ffdfb8; }
+
+.contact {
+  grid-column: 2;
+  grid-row: 1;
+  background: #ffdfb8; }
+
+.address {
+  grid-column: 2;
+  grid-row: 2;
+  background: #7eb3cc; }
+
+.textarea {
+  grid-column: 3;
+  grid-row: 1;
+  background: #7eb3cc; }
+
+.send {
+  grid-column: 3;
+  grid-row: 2;
+  background: #ffdfb8; }

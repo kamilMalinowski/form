@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kocia Baza Danych</title>
     <link href="assets/normalize.css" rel="stylesheet" type="text/css" />
-    <link href="assets/style.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap"
       rel="stylesheet"
@@ -14,11 +14,22 @@
       name="description"
       content="Kocia baza danych stworzona w ramach szkolenia ...WTF: Co ten Frontend..."
     />
-    <meta property="og:image" content="#" />
-    <meta property="og:image:secure_url" content="#" />
-    <meta property="og:image:width" content="400" />
-    <meta property="og:image:height" content="200" />
-    <link rel="icon" type="image/png" sizes="96x96" href="#" />
+    <meta
+      property="og:image"
+      content="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/e4ccb4101942177.5f3c0326d68f2.png"
+    />
+    <meta
+      property="og:image:secure_url"
+      content="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/e4ccb4101942177.5f3c0326d68f2.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="https://mir-s3-cdn-cf.behance.net/project_modules/disp/a07d35101942177.5f3c0326d64da.png"
+    />
   </head>
 
   <!--MAIN-->
@@ -30,196 +41,199 @@
           Kocia Baza Danych
         </h1>
         <p class="header__description">
-          Tu możesz zarejestrować swojego ukochanego pupila
+          "Tu możesz zarejestrować swojego ukochanego pupila"
         </p>
       </header>
 
       <!--FORM-WTF-HOMEWORK-->
       <form
-        action="mailto:kamil.malinowski.mlu@gmail.com"
-        method="POST"
+        action="results.html"
+        method="GET"
         enctype="multipart/form-data"
         name="form"
         class="form"
       >
-        <div class="picture picture--js">Dodaj zdjęcie</div>
-        <!--file-->
-        <p class="form__description">
-          <label class="form__label" for="sendcat">
-            Na koniec wyślij mi zdjęcie Kitku:
-          </label>
-          <input
-            class="form__input-file"
-            id="sendcat"
-            name="sendcat"
-            type="file"
-            accept="image/png, image/jpeg"
-          />
-        </p>
-        <!--input & label-->
-        <p class="form__description">
-          <label class="form__label" for="firstName"
-            >Wymyśl imię dla Kitku:</label
-          >
-          <input
-            required
-            class="form__input"
-            type="text"
-            placeholder="np. Puszek"
-            id="firstName"
-            name="firstName"
-          />
-        </p>
-        <p class="form__description">
-          <label class="form__label" for="lastName"> Wymyśl mu nazwisko:</label>
-          <input
-            required
-            class="form__input"
-            type="text"
-            placeholder="np. Okruszek"
-            id="lastName"
-            name="lastName"
-          />
-        </p>
-        <!--tel-->
-        <p class="form__description">
-          <label class="form__label" for="phoneNumber">
-            Kitkowy numer telefonu:
-          </label>
-          <input
-            required
-            class="form__input"
-            placeholder="A jego numer to?"
-            id="phoneNumber"
-            name="phoneNumber"
-            type="tel"
-          />
-        </p>
-        <!--number-->
-        <p class="form__description">
-          <label class="form__label" for="number">
-            Wiadomo, że Kitku ma swój ulubiony numer:
-          </label>
-          <input
-            required
-            class="form__input"
-            placeholder="Podaj go!"
-            id="number"
-            name="number"
-            type="number"
-          />
-        </p>
-        <!--e-mail-->
-        <p class="form__description">
-          <label class="form__label" for="email">
-            Nie może zabraknąć e-maila:
-          </label>
-          <input
-            required
-            class="form__input"
-            placeholder="np. kitku_92@kociabaza.pl"
-            id="email"
-            name="email"
-            type="email"
-          />
-        </p>
-        <!--password-->
-        <p class="form__description">
-          <label class="form__label" for="password">
-            Wymyśl Kitkowi hasło do e-maila:</label
-          >
-          <input
-            required
-            class="form__input"
-            placeholder="np. Kitkuśmieszku15*a"
-            id="password"
-            name="password"
-            type="password"
-          />
-        </p>
-        <!--range-->
-        <p class="form__description">
-          <label class="form__label" for="range">
-            Kitku lubi się bawić ale jest leniuszkiem. Poruszaj kulką by go
-            rozbawić:
-          </label>
-          <input
-            class="form__range"
-            id="range"
-            name="range"
-            type="range"
-            max="12"
-            min="0"
-            value="0"
-            step="1"
-          />
-        </p>
-        <!--select-->
-        <p class="form__description">
-          <label class="form__label" for="eat">
-            Czy twój Kitku lubi jeść:
-          </label>
-          <select class="form__select" id="eat" name="eat">
-            <option value="eat-1">Rybkę</option>
-            <option value="eat-2">Mięsko</option>
-            <option value="eat-3">Tak</option>
-          </select>
-        </p>
-        <!--textarea-->
-        <p class="form__description">
-          <label class="form__label" for="text-cat">
-            Opisz jaki jest twój Kitku:
-          </label>
-          <textarea
-            class="form__textarea"
-            required
-            id="text-cat"
-            placeholder="np. Mój kitku jest wspaniały"
-            name="text-cat"
-          ></textarea>
-        </p>
-        <!--radio-->
-        <fieldset class="form__fieldset">
-          <legend class="form__legend">Ulubiony kolor Kitku to:</legend>
+        <!--PICTURE AREA-->
+        <div class="pictureArea">
+          <div class="pictureArea__imageframe pictureArea__imageframe--js">
+            Dodaj zdjęcie
+          </div>
+          <!--file-->
           <p class="form__description">
-            <label class="form__label" for="red">Czerwony</label>
-            <input class="form__input" type="radio" id="red" name="red" />
+            <label class="form__label" for="sendcat">
+              Zdjęcie:
+            </label>
+            <input
+              class="form__input form__input--js"
+              id="sendcat"
+              name="sendcat"
+              type="file"
+              accept="image/png, image/jpeg"
+            />
           </p>
+        </div>
+
+        <!--BASIC DATA-->
+        <div class="basicData">
+          <div class="items">
+          <!--name-->
           <p class="form__description">
-            <label class="form__label" for="blue">Niebieski</label>
-            <input class="form__input" type="radio" id="blue" name="blue" />
+            <label class="form__label" for="firstName">Imię:</label>
+            <input
+              required
+              class="form__input"
+              type="text"
+              placeholder="np. Puszek"
+              id="firstName"
+              name="firstName"
+            />
+            
           </p>
+          
+          <!--last name-->
           <p class="form__description">
-            <label class="form__label" for="green">Zielony</label>
-            <input class="form__input" type="radio" id="green" name="green" />
+            <label class="form__label" for="lastName">Nazwisko:</label>
+            <input
+              required
+              class="form__input"
+              type="text"
+              placeholder="np. Okruszek"
+              id="lastName"
+              name="lastName"
+            />
           </p>
+          <!--age-->
           <p class="form__description">
-            <label class="form__label" for="white">Biały</label>
-            <input class="form__input" type="radio" id="white" name="white" />
+            <label class="form__label" for="age">
+              Wiek:
+            </label>
+            <input
+              required
+              class="form__input"
+              placeholder="Wiek pupila"
+              id="age"
+              name="age"
+              type="number"
+            />
           </p>
+          <!--gender-->
           <p class="form__description">
-            <label class="form__label" for="black">Czarny</label>
-            <input class="form__input" type="radio" id="black" name="black" />
+            <label class="form__label" for="gender">
+              Wybierz płeć:
+            </label>
+            <select class="form__select" id="gender" name="gender">
+              <option value="gender-1">Samiec</option>
+              <option value="gender-2">Samica</option>
+            </select>
           </p>
+          </div>
+          <img class="images" src="images/iconmonstr-check-mark-6.svg" alt="check-mark">
+
+        </div>
+
+        <!--CONTACT-->
+        <div class="contact">
+          <!--tel-->
           <p class="form__description">
-            <label class="form__label" for="yellow">Żółty</label>
-            <input class="form__input" type="radio" id="yellow" name="yellow" />
+            <label class="form__label" for="phoneNumber">
+              Numer telefonu:
+            </label>
+            <input
+              required
+              \d{3}[\-]\d{3}[\-]\d{3}
+              class="form__input"
+              placeholder="np. 123-456-789"
+              id="phoneNumber"
+              name="phoneNumber"
+              type="tel"
+            />
           </p>
+          <!--e-mail-->
           <p class="form__description">
-            <label class="form__label" for="pink">Różowy</label>
-            <input class="form__input" type="radio" id="pink" name="pink" />
+            <label class="form__label" for="email">
+              Nie może zabraknąć e-maila:
+            </label>
+            <input
+              required
+              class="form__input"
+              placeholder="np. kitku_92@kociabaza.pl"
+              id="email"
+              name="email"
+              type="email"
+            />
           </p>
+        </div>
+
+        <!--ADDRESS-->
+        <div class="address">
+          <!--street-->
           <p class="form__description">
-            <label class="form__label" for="orange">Pomarańczowy</label>
-            <input class="form__input" type="radio" id="orange" name="orange" />
+            <label class="form__label" for="street">
+              Ulica:
+            </label>
+            <input
+              required
+              [0-9]{2}\-[0-9]{3}
+              class="form__input"
+              placeholder="np. Kocia 58a/6"
+              id="street"
+              name="street"
+              type="text"
+            />
           </p>
-        </fieldset>
-        <!--checkbox-->
-        <fieldset class="form__fieldset">
-          <legend class="form__legend">Rejestracja</legend>
+          <!--locality-->
+          <p class="form__description">
+            <label class="form__label" for="locality">
+              Miejscowość:
+            </label>
+            <input
+              required
+              class="form__input"
+              placeholder="np. Moskwa"
+              id="locality"
+              name="locality"
+              type="text"
+            />
+          </p>
+          <!--postal code-->
+          <p class="form__description">
+            <label class="form__label" for="postalCode">
+              Kod Pocztowy:
+            </label>
+            <input
+              required
+              [0-9]{2}\-[0-9]{3}
+              class="form__input"
+              placeholder="np. 83-140"
+              id="postalCode"
+              name="postalCode"
+              type="number"
+            />
+          </p>
+        </div>
+
+        <!--TEXTAREA-->
+        <div class="textarea">
+          <p class="form__description">
+            <label class="form__label" for="text-cat">
+              Cechy szczególne pupila:
+            </label>
+            <textarea
+              class="form__textarea"
+              required
+              id="text-cat"
+              placeholder="np. Mój kitku jest wspaniały"
+              name="text-cat"
+            ></textarea>
+          </p>
+        </div>
+
+        <!--SUBMIT-->
+        <div class="send">
+          <!--checkbox-->
           <p class="form__description">
             <label class="form__label" for="accept"
-              >Wyrażam zgodę na rejestrację mojego pupila do Kociej Bazy
+              >Wyrażam zgodę na rejestrację mojego pupila w Kociej Bazie
               Danych</label
             >
             <input
@@ -229,19 +243,19 @@
               name="accept"
             />
           </p>
-        </fieldset>
-
-        <!--submit-->
-        <p class="form__description">
-          <input
-            class="form__input form__input--send"
-            id="send"
-            name="send"
-            type="submit"
-            value="Wyślij dane Kitku do kitkowej bazy danych"
-          />
-        </p>
+          <!--send-->
+          <p class="form__description">
+            <input
+              class="form__input"
+              id="send"
+              name="send"
+              type="submit"
+              value="Wyślij"
+            />
+          </p>
+        </div>
       </form>
     </main>
+    <script src="index.js"></script>
   </body>
 </html>
