@@ -1,1 +1,56 @@
-work in progress
+![cover](https://kamilMalinowski.github.io/form/images/iconmonstr-cat-3.svg)
+![cover](https://kamilMalinowski.github.io/form/images/iconmonstr-cat-3.svg)
+![cover](https://kamilMalinowski.github.io/form/images/iconmonstr-cat-3.svg)
+![cover](https://kamilMalinowski.github.io/form/images/iconmonstr-cat-3.svg)
+![cover](https://kamilMalinowski.github.io/form/images/iconmonstr-cat-3.svg)
+![cover](https://kamilMalinowski.github.io/form/images/iconmonstr-cat-3.svg)
+![cover](https://kamilMalinowski.github.io/form/images/iconmonstr-cat-3.svg)
+![cover](https://kamilMalinowski.github.io/form/images/iconmonstr-cat-3.svg)
+![cover](https://kamilMalinowski.github.io/form/images/iconmonstr-cat-3.svg)
+![cover](https://kamilMalinowski.github.io/form/images/iconmonstr-cat-3.svg)
+![cover](https://kamilMalinowski.github.io/form/images/iconmonstr-cat-3.svg)
+![cover](https://kamilMalinowski.github.io/form/images/iconmonstr-cat-3.svg)
+![cover](https://kamilMalinowski.github.io/form/images/iconmonstr-cat-3.svg)
+![cover](https://kamilMalinowski.github.io/form/images/iconmonstr-cat-3.svg)
+![cover](https://kamilMalinowski.github.io/form/images/iconmonstr-cat-3.svg)
+![cover](https://kamilMalinowski.github.io/form/images/iconmonstr-cat-3.svg)
+![cover](https://kamilMalinowski.github.io/form/images/iconmonstr-cat-3.svg)
+![cover](https://kamilMalinowski.github.io/form/images/iconmonstr-cat-3.svg)
+![cover](https://kamilMalinowski.github.io/form/images/iconmonstr-cat-3.svg)
+![cover](https://kamilMalinowski.github.io/form/images/iconmonstr-cat-3.svg)
+![cover](https://kamilMalinowski.github.io/form/images/iconmonstr-cat-3.svg)
+![cover](https://kamilMalinowski.github.io/form/images/iconmonstr-cat-3.svg)
+![cover](https://kamilMalinowski.github.io/form/images/iconmonstr-cat-3.svg)
+
+# KOCIA BAZA DANYCH - WORK IN PROGRESS
+
+Hi, this is my form created as part of the "WTF: Co ten frontend" training. 
+
+## TOOLS
+
+- HTML + CSS + JS
+
+## STATUS: I'm still working on it.
+![cover](https://kamilMalinowski.github.io/form/images/iconmonstr-cat-3.svg)
+![cover](https://kamilMalinowski.github.io/form/images/iconmonstr-cat-3.svg)
+![cover](https://kamilMalinowski.github.io/form/images/iconmonstr-cat-3.svg)
+![cover](https://kamilMalinowski.github.io/form/images/iconmonstr-cat-3.svg)
+![cover](https://kamilMalinowski.github.io/form/images/iconmonstr-cat-3.svg)
+![cover](https://kamilMalinowski.github.io/form/images/iconmonstr-cat-3.svg)
+![cover](https://kamilMalinowski.github.io/form/images/iconmonstr-cat-3.svg)
+![cover](https://kamilMalinowski.github.io/form/images/iconmonstr-cat-3.svg)
+![cover](https://kamilMalinowski.github.io/form/images/iconmonstr-cat-3.svg)
+![cover](https://kamilMalinowski.github.io/form/images/iconmonstr-cat-3.svg)
+![cover](https://kamilMalinowski.github.io/form/images/iconmonstr-cat-3.svg)
+![cover](https://kamilMalinowski.github.io/form/images/iconmonstr-cat-3.svg)
+![cover](https://kamilMalinowski.github.io/form/images/iconmonstr-cat-3.svg)
+![cover](https://kamilMalinowski.github.io/form/images/iconmonstr-cat-3.svg)
+![cover](https://kamilMalinowski.github.io/form/images/iconmonstr-cat-3.svg)
+![cover](https://kamilMalinowski.github.io/form/images/iconmonstr-cat-3.svg)
+![cover](https://kamilMalinowski.github.io/form/images/iconmonstr-cat-3.svg)
+![cover](https://kamilMalinowski.github.io/form/images/iconmonstr-cat-3.svg)
+![cover](https://kamilMalinowski.github.io/form/images/iconmonstr-cat-3.svg)
+![cover](https://kamilMalinowski.github.io/form/images/iconmonstr-cat-3.svg)
+![cover](https://kamilMalinowski.github.io/form/images/iconmonstr-cat-3.svg)
+![cover](https://kamilMalinowski.github.io/form/images/iconmonstr-cat-3.svg)
+![cover](https://kamilMalinowski.github.io/form/images/iconmonstr-cat-3.svg)
