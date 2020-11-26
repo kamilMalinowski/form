@@ -1,5 +1,11 @@
-/* ----------BASIC---------- */
-/*RESET-m.korsan idea*/
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap");
+
+/* ----------BASIC - colors---------- */
+$greenBG: #3c8071;
+$black: #000000;
+$lightBeige: #c4fff2;
+
+/* ----------BASIC - body & main---------- */
 html {
   box-sizing: border-box;
 }
@@ -11,95 +17,100 @@ html {
 
 /*body*/
 .body {
-  background: #366780;
-  color: #000000;
-  font-family: "Work Sans", sans-serif;
+  color: $black;
+  font-family: "Quicksand", sans-serif;
 }
 
 /*main*/
 .main {
-  width: 100%;
+  background: $greenBG;
 }
 
 /* ----------HEADER---------- */
 /*header*/
 .header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background: #366780;
-  color: #ffdfb8;
+  text-align: center;
+  color: $lightBeige;
   width: 100%;
+  margin: 0;
+  padding: 0;
   &__title {
-    font-size: 40px;
+    font-size: 30px;
+    margin: 0 auto;
+    padding: 12px 4px 0;
   }
   &__description {
     font-size: 16px;
+    margin: 0 auto;
+    padding: 14px 4px 18px 4px;
+    font-style: italic;
   }
 }
 
 /* ----------FORM---------- */
 /*form*/
 .form {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  &__description {
-    font-size: 16px;
-    margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: $lightBeige;
+  margin: 0;
+  padding: 0;
+}
+
+.form-item {
+  padding: 0;
+  width: 300px;
+  margin: 10px 0 0 0;
+  border: 2px dashed $greenBG;
+  &__inputFrame {
+    margin: 16px;
+    padding: 0;
   }
   &__label {
-    margin-left: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
     display: block;
-    padding-bottom: 4px;
+    padding: 0 0 4px 0;
+    color: $greenBG;
   }
   &__input {
-    font-size: 16px;
-    margin-left: 5px;
+    font-size: 14px;
+    margin: 0;
+    padding: 1px;
+    border: none;
+    width: 100%;
+    color: $greenBG;
     height: 24px;
+    &::-webkit-file-upload-button {
+      display: block;
+      border: none;
+      background: $greenBG;
+      color: $lightBeige;
+      font-size: 14px;
+      margin: 0;
+      padding: 4px;
+      width: 100%;
+    }
+    &--select {
+      background: $greenBG;
+      color: $lightBeige;
+    }
+    &--textarea {
+      height: 186px;
+      resize: none;
+    }
   }
-  &__select {
-    font-size: 16px;
-    margin-left: 5px;
-    height: 24px;
-  }
-  &__textarea {
-    font-size: 16px;
-    margin-left: 5px;
-    height: 186px;
-    width: 196px;
-  }
-}
-
-.item {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background: #ffdfb8;
-  &__box {
-    border: 2px dashed #366780;
-    padding: 5px;
-    width: 230px;
-    height: 265px;
-    margin: 10px;
-  }
-  &__image {
-    animation: rotate 1s ease-in-out infinite alternate;
-    width: 150px;
-    height: 150px;
-    margin: 5px;
-
-  }
-}
-
-@keyframes rotate {
-  from {
-    transform: scale(1);
-
-  }
-  to {
-    transform: scale(1.04);
-
+  &__input[type="submit"] {
+    display: block;
+    border: none;
+    background: $greenBG;
+    color: $lightBeige;
+    font-size: 14px;
+    margin: 0;
+    padding: 4px;
+    width: 100%;
   }
 }

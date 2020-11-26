@@ -6,10 +6,6 @@
     <title>Kocia Baza Danych</title>
     <link href="assets/normalize.css" rel="stylesheet" type="text/css" />
     <link href="style.css" rel="stylesheet" type="text/css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap"
-      rel="stylesheet"
-    />
     <meta
       name="description"
       content="Kocia baza danych stworzona w ramach szkolenia ...WTF: Co ten Frontend..."
@@ -94,7 +90,7 @@
           <!--gender-->
           <p class="form-item__inputFrame">
             <label class="form-item__label" for="gender">Wybierz płeć:</label>
-            <select class="form__select" id="gender" name="gender">
+            <select class="form-item__input form-item__input--select" id="gender" name="gender">
               <option value="gender-1">Samiec</option>
               <option value="gender-2">Samica</option>
             </select>
@@ -184,7 +180,7 @@
               >Cechy szczególne pupila:</label
             >
             <textarea
-              class="form__textarea"
+              class="form-item__input form-item__input--textarea"
               required
               id="text-cat"
               placeholder="np. Mój kitku jest wspaniały"
