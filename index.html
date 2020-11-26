@@ -14,9 +14,12 @@
       name="description"
       content="Kocia baza danych stworzona w ramach szkolenia ...WTF: Co ten Frontend..."
     />
-    <meta property="og:image" content="#" /> <!--work in progress-->
-    <meta property="og:image:secure_url" content="#" /> <!--work in progress-->
-    <link rel="icon" type="image/png" sizes="96x96" href="#" /> <!--work in progress-->
+    <meta property="og:image" content="#" />
+    <!--work in progress-->
+    <meta property="og:image:secure_url" content="#" />
+    <!--work in progress-->
+    <link rel="icon" type="image/png" sizes="96x96" href="#" />
+    <!--work in progress-->
   </head>
 
   <!--MAIN-->
@@ -24,247 +27,203 @@
     <main class="main">
       <!--header-->
       <header class="header">
-        <h1 class="header__tilte">Kocia Baza Danych</h1>
+        <h1 class="header__title">Kocia Baza Danych</h1>
         <p class="header__description">
           "Tu możesz zarejestrować swojego ukochanego pupila"
         </p>
       </header>
 
       <!--FORM-WTF-HOMEWORK-->
-      <form
-        action="results.html"
-        method="GET"
-        enctype="multipart/form-data"
-        name="form"
-        class="form"
-      >
+      <form name="form" class="form">
         <!--PICTURE AREA-->
-        <div class="item">
-          <div class="item__box">
-            <!--file-->
-            <p class="form__description">
-              <label class="form__label" for="sendcat"> Zdjęcie: </label>
-              <input
-                class="form__input form__input--js"
-                id="sendcat"
-                name="sendcat"
-                type="file"
-                accept="image/png, image/jpeg"
-              />
-            </p>
-          </div>
-          <img
-            class="item__image"
-            src="images/iconmonstr-photo-camera-12.svg"
-            alt="check-mark"
-          />
+        <div class="form-item">
+          <!--file-->
+          <p class="form-item__inputFrame">
+            <label class="form-item__label" for="sendcat">Zdjęcie:</label>
+            <input
+              class="form-item__input img--js"
+              id="sendcat"
+              name="sendcat"
+              type="file"
+              accept="image/png, image/jpeg"
+            />
+          </p>
         </div>
 
         <!--BASIC DATA-->
-        <div class="item">
-          <div class="item__box">
-            <!--name-->
-            <p class="form__description">
-              <label class="form__label" for="firstName">Imię:</label>
-              <input
-                required
-                class="form__input"
-                type="text"
-                placeholder="np. Puszek"
-                id="firstName"
-                name="firstName"
-              />
-            </p>
+        <div class="form-item">
+          <!--name-->
+          <p class="form-item__inputFrame">
+            <label class="form-item__label" for="firstName">Imię:</label>
+            <input
+              required
+              class="form-item__input"
+              type="text"
+              placeholder="np. Puszek"
+              id="firstName"
+              name="firstName"
+            />
+          </p>
 
-            <!--last name-->
-            <p class="form__description">
-              <label class="form__label" for="lastName">Nazwisko:</label>
-              <input
-                required
-                class="form__input"
-                type="text"
-                placeholder="np. Okruszek"
-                id="lastName"
-                name="lastName"
-              />
-            </p>
-            <!--age-->
-            <p class="form__description">
-              <label class="form__label" for="age"> Wiek: </label>
-              <input
-                required
-                class="form__input"
-                placeholder="Wiek pupila"
-                id="age"
-                name="age"
-                type="number"
-              />
-            </p>
-            <!--gender-->
-            <p class="form__description">
-              <label class="form__label" for="gender"> Wybierz płeć: </label>
-              <select class="form__select" id="gender" name="gender">
-                <option value="gender-1">Samiec</option>
-                <option value="gender-2">Samica</option>
-              </select>
-            </p>
-          </div>
-          <img
-            class="item__image"
-            src="images/iconmonstr-cat-3.svg"
-            alt="check-mark"
-          />
+          <!--last name-->
+          <p class="form-item__inputFrame">
+            <label class="form-item__label" for="lastName">Nazwisko:</label>
+            <input
+              required
+              class="form-item__input"
+              type="text"
+              placeholder="np. Okruszek"
+              id="lastName"
+              name="lastName"
+            />
+          </p>
+
+          <!--age-->
+          <p class="form-item__inputFrame">
+            <label class="form-item__label" for="age">Wiek:</label>
+            <input
+              required
+              class="form-item__input"
+              placeholder="Wiek pupila"
+              id="age"
+              name="age"
+              type="number"
+            />
+          </p>
+
+          <!--gender-->
+          <p class="form-item__inputFrame">
+            <label class="form-item__label" for="gender">Wybierz płeć:</label>
+            <select class="form__select" id="gender" name="gender">
+              <option value="gender-1">Samiec</option>
+              <option value="gender-2">Samica</option>
+            </select>
+          </p>
         </div>
 
         <!--CONTACT-->
-        <div class="item">
-          <div class="item__box">
-            <!--tel-->
-            <p class="form__description">
-              <label class="form__label" for="phoneNumber">
-                Numer telefonu:
-              </label>
-              <input
-                required
-                \d{3}[\-]\d{3}[\-]\d{3}
-                class="form__input"
-                placeholder="np. 123-456-789"
-                id="phoneNumber"
-                name="phoneNumber"
-                type="tel"
-              />
-            </p>
-            <!--e-mail-->
-            <p class="form__description">
-              <label class="form__label" for="email">
-                Nie może zabraknąć e-maila:
-              </label>
-              <input
-                required
-                class="form__input"
-                placeholder="np. kitku_92@kociabaza.pl"
-                id="email"
-                name="email"
-                type="email"
-              />
-            </p>
-          </div>
-          <img
-            class="item__image"
-            src="images/iconmonstr-phone-8.svg"
-            alt="check-mark"
-          />
+        <div class="form-item">
+          <!--tel-->
+          <p class="form-item__inputFrame">
+            <label class="form-item__label" for="phoneNumber"
+              >Numer telefonu:</label
+            >
+            <input
+              required
+              class="form-item__input"
+              placeholder="np. 123-456-789"
+              id="phoneNumber"
+              name="phoneNumber"
+              type="tel"
+            />
+          </p>
+
+          <!--e-mail-->
+          <p class="form-item__inputFrame">
+            <label class="form-item__label" for="email">Adres e-mail:</label>
+            <input
+              required
+              class="form-item__input"
+              placeholder="np. kitku_92@kociabaza.pl"
+              id="email"
+              name="email"
+              type="email"
+            />
+          </p>
         </div>
 
         <!--ADDRESS-->
-        <div class="item">
-          <div class="item__box">
-            <!--street-->
-            <p class="form__description">
-              <label class="form__label" for="street"> Ulica: </label>
-              <input
-                required
-                pattern="[0-9]{2}\-[0-9]{3}"
-                class="form__input"
-                placeholder="np. Kocia 58a/6"
-                id="street"
-                name="street"
-                type="text"
-              />
-            </p>
-            <!--locality-->
-            <p class="form__description">
-              <label class="form__label" for="locality"> Miejscowość: </label>
-              <input
-                required
-                class="form__input"
-                placeholder="np. Moskwa"
-                id="locality"
-                name="locality"
-                type="text"
-              />
-            </p>
-            <!--postal code-->
-            <p class="form__description">
-              <label class="form__label" for="postalCode">
-                Kod Pocztowy:
-              </label>
-              <input
-                required
-                pattern="[0-9]{2}\-[0-9]{3}"
-                class="form__input"
-                placeholder="np. 83-140"
-                id="postalCode"
-                name="postalCode"
-                type="number"
-              />
-            </p>
-          </div>
-          <img
-            class="item__image"
-            src="images/iconmonstr-home-10.svg"
-            alt="check-mark"
-          />
+        <div class="form-item">
+          <!--street-->
+          <p class="form-item__inputFrame">
+            <label class="form-item__label" for="street">Ulica:</label>
+            <input
+              required
+              class="form-item__input"
+              placeholder="np. Kocia 58a/6"
+              id="street"
+              name="street"
+              type="text"
+            />
+          </p>
+
+          <!--locality-->
+          <p class="form-item__inputFrame">
+            <label class="form-item__label" for="locality">Miejscowość:</label>
+            <input
+              required
+              class="form-item__input"
+              placeholder="np. Gniew"
+              id="locality"
+              name="locality"
+              type="text"
+            />
+          </p>
+
+          <!--postal code-->
+          <p class="form-item__inputFrame">
+            <label class="form-item__label" for="postalCode">
+              Kod Pocztowy:
+            </label>
+            <input
+              required
+              class="form-item__input"
+              placeholder="np. 83-140"
+              id="postalCode"
+              name="postalCode"
+              type="number"
+            />
+          </p>
         </div>
 
         <!--TEXTAREA-->
-        <div class="item">
-          <div class="item__box">
-            <p class="form__description">
-              <label class="form__label" for="text-cat">
-                Cechy szczególne pupila:
-              </label>
-              <textarea
-                class="form__textarea"
-                required
-                id="text-cat"
-                placeholder="np. Mój kitku jest wspaniały"
-                name="text-cat"
-              ></textarea>
-            </p>
-          </div>
-          <img
-            class="item__image"
-            src="images/iconmonstr-pencil-9.svg"
-            alt="check-mark"
-          />
+        <div class="form-item">
+          <!--description-->
+          <p class="form-item__inputFrame">
+            <label class="form-item__label" for="text-cat"
+              >Cechy szczególne pupila:</label
+            >
+            <textarea
+              class="form__textarea"
+              required
+              id="text-cat"
+              placeholder="np. Mój kitku jest wspaniały"
+              name="text-cat"
+            ></textarea>
+          </p>
         </div>
 
         <!--SUBMIT-->
-        <div class="item">
-          <div class="item__box">
-            <!--checkbox-->
-            <p class="form__description">
-              <label class="form__label" for="accept"
-                >Wyrażam zgodę na rejestrację mojego pupila w Kociej Bazie
-                Danych</label
-              >
-              <input
-                class="form__input"
-                type="checkbox"
-                id="accept"
-                name="accept"
-              />
-            </p>
-            <!--send-->
-            <p class="form__description">
-              <input
-                class="form__input"
-                id="send"
-                name="send"
-                type="submit"
-                value="Wyślij"
-              />
-            </p>
-          </div>
-          <img
-            class="item__image"
-            src="images/iconmonstr-check-mark-6.svg"
-            alt="check-mark"
-          />
+        <div class="form-item">
+          <!--checkbox-->
+          <p class="form-item__inputFrame">
+            <label class="form-item__label" for="accept"
+              >Wyrażam zgodę na rejestrację mojego pupila w Kociej Bazie
+              Danych</label
+            >
+            <input
+              class="form-item__input"
+              type="checkbox"
+              id="accept"
+              name="accept"
+            />
+          </p>
+
+          <!--send-->
+          <p class="form-item__inputFrame">
+            <input
+              class="form-item__input"
+              id="send"
+              name="send"
+              type="submit"
+              value="Wyślij"
+            />
+          </p>
         </div>
       </form>
     </main>
+
+    <!--JAVASCRIPT-->
     <script src="index.js"></script>
   </body>
 </html>
