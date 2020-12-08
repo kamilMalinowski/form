@@ -47,6 +47,10 @@ html {
   margin: 0;
   padding: 0; }
 
+#accept {
+  width: 12px;
+  height: 12px; }
+
 .form-item {
   padding: 0;
   width: 300px;
