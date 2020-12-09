@@ -30,16 +30,16 @@
       </header>
 
       <!--FORM-WTF-HOMEWORK-->
-      <form id="form" name="form" class="form form--js" action="results.html" method="POST">
+      <form id="form" name="form" class="form" action="index.php" method="post">
         <!--PICTURE AREA-->
         <div class="form-item">
           <!--file-->
           <p class="form-item__inputFrame">
-            <label class="form-item__label" for="sendcat">Zdjęcie:</label>
+            <label class="form-item__label" for="sendCat">Zdjęcie:</label>
             <input
               class="form-item__input img--js"
-              id="sendcat"
-              name="sendcat"
+              id="sendCat"
+              name="sendCat"
               type="file"
               accept="image/png, image/jpeg"
             />
@@ -95,8 +95,8 @@
               id="gender"
               name="gender"
             >
-              <option value="gender-1">Samiec</option>
-              <option value="gender-2">Samica</option>
+              <option value="M">Samiec</option>
+              <option value="F">Samica</option>
             </select>
           </p>
         </div>
@@ -171,7 +171,7 @@
               placeholder="np. 83-140"
               id="postalCode"
               name="postalCode"
-              type="number"
+              type="text"
             />
           </p>
         </div>
