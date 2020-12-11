@@ -37,6 +37,7 @@
           <p class="form-item__inputFrame">
             <label class="form-item__label" for="sendCat">Zdjęcie:</label>
             <input
+              required
               class="form-item__input img--js"
               id="sendCat"
               name="sendCat"
@@ -52,6 +53,7 @@
           <p class="form-item__inputFrame">
             <label class="form-item__label" for="firstName">Imię:</label>
             <input
+              autocomplete="off"
               required
               class="form-item__input"
               type="text"
@@ -65,6 +67,7 @@
           <p class="form-item__inputFrame">
             <label class="form-item__label" for="lastName">Nazwisko:</label>
             <input
+              autocomplete="off"
               required
               class="form-item__input"
               type="text"
@@ -78,6 +81,7 @@
           <p class="form-item__inputFrame">
             <label class="form-item__label" for="age">Wiek:</label>
             <input
+              autocomplete="off"
               required
               class="form-item__input"
               placeholder="Wiek pupila"
@@ -109,6 +113,7 @@
               >Numer telefonu:</label
             >
             <input
+              autocomplete="off"
               required
               class="form-item__input"
               placeholder="np. 123-456-789"
@@ -138,6 +143,7 @@
           <p class="form-item__inputFrame">
             <label class="form-item__label" for="street">Ulica:</label>
             <input
+              autocomplete="no"
               required
               class="form-item__input"
               placeholder="np. Kocia 58a/6"
@@ -151,6 +157,7 @@
           <p class="form-item__inputFrame">
             <label class="form-item__label" for="locality">Miejscowość:</label>
             <input
+              autocomplete="no"
               required
               class="form-item__input"
               placeholder="np. Gniew"
@@ -166,6 +173,7 @@
               Kod Pocztowy:
             </label>
             <input
+              autocomplete="on"
               required
               class="form-item__input"
               placeholder="np. 83-140"
@@ -184,6 +192,7 @@
               >Cechy szczególne pupila:</label
             >
             <textarea
+              autocomplete="off"
               class="form-item__input form-item__input--textarea"
               required
               id="text-cat"
@@ -202,6 +211,7 @@
               Danych</label
             >
             <input
+              required
               class="form-item__input"
               type="checkbox"
               id="accept"
@@ -212,6 +222,7 @@
           <!--send-->
           <p class="form-item__inputFrame">
             <input
+              autocomplete="off"
               class="form-item__input"
               id="send"
               name="send"
@@ -222,7 +233,7 @@
         </div>
       </form>
     </main>
-      
+
     <!--JAVASCRIPT-->
     <script src="index.js"></script>
   </body>
