@@ -9,4 +9,5 @@ Hi, this is my form created as part of the "WTF: Co ten frontend" training.
 - HTML
 - CSS
 - JS
+- XAMPP **New!**
 - PHP **New!**
